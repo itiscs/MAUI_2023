@@ -1,0 +1,9 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MauiAppFirst/.vs/MauiAppFirst
+/MauiAppFirst/MauiAppFirst/.vs/ProjectEvaluation
+/MauiAppFirst/MauiAppFirst/bin/Debug/net7.0-windows10.0.19041.0/win10-x64
+/MauiAppFirst/MauiAppFirst/obj
