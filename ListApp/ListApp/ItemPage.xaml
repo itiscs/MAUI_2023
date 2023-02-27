@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListApp.ItemPage"
+             Title="ItemPage">
+    <VerticalStackLayout>
+        <Label Text="Товар" HorizontalOptions="Center" FontSize="Header" />
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Название"  Margin="10" FontSize="Medium"/>
+            <Entry Text="{Binding Name, Mode=TwoWay}" WidthRequest="200"  Margin="10" FontSize="Medium"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Цена"  Margin="10" FontSize="Medium"/>
+            <Entry Text="{Binding Price, Mode=TwoWay}" WidthRequest="100"  Margin="10" FontSize="Medium"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Рисунок"  Margin="10" FontSize="Medium"/>
+            <Entry Text="{Binding Image, Mode=TwoWay}" WidthRequest="200"  Margin="10" FontSize="Medium"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnSave" Text="Сохранить" Clicked="btnSave_Clicked"/>
+            <Button x:Name="btnDelete" Text="Удалить" Clicked="btnDelete_Clicked" IsVisible="false"/>
+            <Button x:Name="btnCancel" Text="Отмена" Clicked="btnCancel_Clicked"/>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,4 +1,4 @@
-﻿namespace MauiAppFirst;
+﻿namespace ListApp;
 
 public partial class App : Application
 {
@@ -8,6 +8,4 @@ public partial class App : Application
 
 		MainPage = new AppShell();
 	}
-
-	
 }
